@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QyonAdventureWorks.Infra\QyonAdventureWorks.Infra.csproj" />
+    <ProjectReference Include="..\QyonAdventureWorks.Domain\QyonAdventureWorks.Domain.csproj" />
+    <ProjectReference Include="..\QyonAdventureWorks.Infra\QyonAdventureWorks.Infra.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Sql_Scripts\" />
+  </ItemGroup>
+
+</Project>
